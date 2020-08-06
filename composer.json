@@ -7,7 +7,8 @@
     "authors": [
         {
             "name": "Web Loupe",
-            "homepage": "https://www.webloupe.de"
+            "homepage": "https://www.webloupe.de",
+            "role": "Manufacturer"
         }
     ],
     "require": {
