@@ -1,0 +1,15 @@
+{% sw_extends '@Framework/documents/invoice.html.twig' %}
+
+{% block document_side_info_customer_number %}
+    {{ parent() }}
+
+    {% if config.invoiceEmail.DisplayEmail == true and customer.email %}
+        <tr>
+            <td>
+                {% if config.invoiceEmail.DisplayLabel == true %}{{ "WeloPlatformInvoiceEmail.documents.email"|trans }}: {% endif %}{{ customer.email }}
+            </td>
+        </tr>
+    {% endif %}
+
+{% endblock %}
+
